@@ -1,11 +1,10 @@
-
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Constraint = Matter.Constraint;
 
 var engine, world;
-var holder,ball,ground;
+var holder ,ball, ground;
 
 function setup() {
   createCanvas(400,400);
@@ -56,8 +55,8 @@ function draw() {
   Engine.update(engine);
 
 
-  text("Press space bar to oscillate the pendulam to left and right with mouse",10,20);
-  text("Press Enter to stop the Pendulum from oscillating",100,50);
+  text("Press the Enter Key to have the Pendulum follow your mouse",10,20);
+  text("Press the Pause Key to stop the Pendulum from following your mouse.",100,50);
 
   fill ("yellow");
 rectMode(CENTER);
@@ -79,22 +78,14 @@ line(ball.position.x,ball.position.y,holder.position.x,holder.position.y)
 
 
 
-if(keyCode===32){
+if(keyCode === 13){
 ball.position.y = mouseY;
 ball.position.x = mouseX;
 }
 
-else if (keyCode === ENTER){
+else if (keyCode === 19){
 ball.position.x = 200;
 
 }
 
 }
-
-
-
-
-
-
-
-
