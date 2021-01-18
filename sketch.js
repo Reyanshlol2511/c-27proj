@@ -46,7 +46,7 @@ var options = {
 var string = Constraint.create(options);
 World.add(world,string);
 
-fill("Blue");
+fill("Red");
 }
 
 
