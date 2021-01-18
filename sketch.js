@@ -46,7 +46,7 @@ var options = {
 var string = Constraint.create(options);
 World.add(world,string);
 
-fill("Red");
+fill("Blue");
 }
 
 
@@ -55,14 +55,14 @@ function draw() {
   Engine.update(engine);
 
 
-  text("Press the Enter Key to have the Pendulum follow your mouse",10,20);
-  text("Press the Pause Key to stop the Pendulum from following your mouse.",100,50);
+  text("Press the Enter Key to have the Pendulum follow your mouse",10 , 20);
+  text("Press the Pause Key to stop the Pendulum from following your mouse.", 10, 50);
 
   fill ("yellow");
 rectMode(CENTER);
 rect(holder.position.x,holder.position.y,200,20);
 
-fill(0);
+fill("red");
 rectMode(CENTER);
 rect(ground.position.x,ground.position.y,400,20);
 
